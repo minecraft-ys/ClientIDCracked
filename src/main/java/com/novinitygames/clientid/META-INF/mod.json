@@ -1,0 +1,22 @@
+{
+    "name": "ClientID",
+    "version": "1.0.0",
+    "description": "Sends your mod and resource pack list to compatible servers",
+    "authors": ["Novinity"],
+    "dependencies": [
+      {
+        "mod": "fabric-api",
+        "version": "[0.0.0,) -> 0.1.0"
+      }
+    ],
+    "mixins": [
+      {
+        "source": "clientidClient.mixins.json",
+        "environment": "client"
+      },
+      {
+        "source": "clientidServer.mixins.json",
+        "environment": "server"
+      }
+    ]
+  }
